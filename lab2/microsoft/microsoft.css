@@ -1,0 +1,47 @@
+*{ 
+    box-sizing: border-box;
+    margin:0; 
+    padding:0;
+}
+
+.microsoft-logo{ 
+    width: 120px;
+    margin-left: 10px;
+}
+body{ 
+    font-family: 'Segou UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background-color: #fff;
+    color: #000; 
+    font-size: 15px;
+    line-height: 1.5;
+}
+a{ 
+    color: #262626; 
+    text-decoration: none;
+}
+ul{ 
+    list-style: none;
+}
+.container{ 
+    width: 90%;
+    max-width: 110px;
+    margin:auto; 
+
+}
+
+.main-nav{ 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height:60px; 
+    padding: 20px 0px; 
+    font-size: 13px;
+
+}
+
+.main-nav ul{ 
+    display: flex; 
+}
+.main-nav ul.right_part{ 
+    flex: 1
+}

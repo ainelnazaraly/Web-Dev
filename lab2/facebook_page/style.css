@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(222, 220, 224);
+    font-family: 'Roboto', sans-serif; /* Applied font family */
+}
+
+.container {
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_part {
+    width: 40%;
+    position: relative;
+    top: 0;
+}
+
+h1 {
+    color: royalblue;
+    font-size: 80px;
+    margin-bottom: 10px; /* Adjusted */
+    font-family: 'Roboto', sans-serif; /* Applied font family */
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: -10px; /* Adjusted */
+    font-family: 'Roboto', sans-serif; /* Applied font family */
+}
+
+.right_part {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 450px;
+    height: auto; /* Adjusted */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adjusted */
+    border-radius: 8px;
+    padding: 20px; /* Adjusted */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+input {
+    width: 380px;
+    height: 50px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+input[type="submit"] {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer; /* Added */
+}
+
+p {
+    margin-top: 10px; /* Adjusted */
+    margin-bottom: 10px;
+    color: royalblue;
+}
+
+hr {
+    border: 1px solid #ccc;
+    width: 100%; /* Adjusted */
+    margin: 20px 0px;
+}
+
+.create_account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(34, 139, 34);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold; /* Adjusted */
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Added */
+}
+
+span {
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: bold; /* Adjusted */
+}
