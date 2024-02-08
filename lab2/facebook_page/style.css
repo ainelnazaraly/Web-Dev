@@ -11,7 +11,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgb(222, 220, 224);
-    font-family: 'Roboto', sans-serif; /* Applied font family */
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -31,15 +31,15 @@ body {
 h1 {
     color: royalblue;
     font-size: 80px;
-    margin-bottom: 10px; /* Adjusted */
-    font-family: 'Roboto', sans-serif; /* Applied font family */
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; 
 }
 
 h3 {
     color: black;
     font-size: 20px;
-    margin-top: -10px; /* Adjusted */
-    font-family: 'Roboto', sans-serif; /* Applied font family */
+    margin-top: -10px; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .right_part {
@@ -55,10 +55,10 @@ h3 {
     align-items: center;
     background-color: white;
     width: 450px;
-    height: auto; /* Adjusted */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adjusted */
+    height: auto; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
     border-radius: 8px;
-    padding: 20px; /* Adjusted */
+    padding: 20px; 
 }
 
 form {
@@ -81,18 +81,18 @@ input {
 input[type="submit"] {
     background-color: royalblue;
     color: white;
-    cursor: pointer; /* Added */
+    cursor: pointer; 
 }
 
 p {
-    margin-top: 10px; /* Adjusted */
+    margin-top: 10px; 
     margin-bottom: 10px;
     color: royalblue;
 }
 
 hr {
     border: 1px solid #ccc;
-    width: 100%; /* Adjusted */
+    width: 100%; 
     margin: 20px 0px;
 }
 
@@ -105,15 +105,14 @@ hr {
     width: 250px;
     height: 50px;
     font-size: 18px;
-    font-weight: bold; /* Adjusted */
-    color: white;
+    font-weight: bold; 
     border-radius: 10px;
     margin-bottom: 20px;
-    cursor: pointer; /* Added */
+    cursor: pointer; 
 }
 
 span {
     margin: 20px 0px;
     font-size: 18px;
-    font-weight: bold; /* Adjusted */
+    font-weight: bold; 
 }

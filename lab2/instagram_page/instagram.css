@@ -67,7 +67,7 @@ body{
     margin: 0 10px;
 }
 
-.fb-login {
+.facebook-login {
     font-weight: 700;
     font-size: 95%;
     color: rgb(85, 0, 255);
@@ -75,13 +75,13 @@ body{
     margin-top: 10px;
 }
 
-.sign-up {
+.signup {
     text-align: center;
     border: 1px solid rgba(128, 128, 128, 0.3);
     padding: 20px;
     margin: 10px;
 }
-.get-app {
+.gettheapp {
     display: flex;
     flex-direction: column;
     text-align: center;
