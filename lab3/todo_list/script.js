@@ -1,5 +1,6 @@
 const inputBox =document.getElementById("input-box"); 
 const listContainer = document.getElementById("list-container");
+
 function addTask(){ 
     if( inputBox.value ===''){ 
         alert("Your input is empty. Write something!");
@@ -19,7 +20,6 @@ function addTask(){
 
 inputBox.addEventListener("keypress", function(event){ 
     if(event.key === "Enter"){ 
-        event.preventDefault();
         document.getElementById("Add").click();
     }
 })
@@ -38,7 +38,7 @@ listContainer.addEventListener("click", function(e){
             false; 
         }
     }
-}, false)
+})
 
 function saveData(){ 
     localStorage.setItem("data", listContainer.innerHTML);
@@ -48,4 +48,4 @@ function showData(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
-showTask();
+showData();
