@@ -1,0 +1,35 @@
+*{ 
+    font-size: 25px;
+}
+img{
+    width: 360px;
+    height: auto;
+    border-radius: 8px; /*Add a border-radius for rounded corners */
+    margin-bottom: 10px; /*Space between image and text*/
+} 
+
+a{
+    border: 1px solid cadetblue; /* Thin border around the link */
+    padding: 5px;
+     margin-right: 1cm;
+     background-color: cadetblue;
+     color: white
+}
+.product-description{ 
+    width: 700px; 
+    height: auto; 
+    margin-left: 2cm;
+    margin-top: 2cm;
+    border: 1px solid #E1C9E2; 
+    padding: 20px;
+    border-radius: 2%;
+}
+.product-details{ 
+    display: flex; /* Use flexbox layout */
+    align-items: flex-start;
+}
+
+.product-description button { 
+    background-color: black;
+    border-radius: 10%;
+}
