@@ -1,0 +1,19 @@
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted grid template columns */
+  grid-gap: 20px;
+}
+
+.photo-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.photo-details p {
+  margin: 0;
+}
+
+.photo-details img {
+  max-width: 100%;
+  height: auto;
+}
