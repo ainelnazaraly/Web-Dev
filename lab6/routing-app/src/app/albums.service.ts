@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient } from "@angular/common/http";
 import { Album } from './models/album.model';
 import { AlbumPhoto } from './models/album-photo.model';
 
@@ -7,34 +7,33 @@ import { AlbumPhoto } from './models/album-photo.model';
   providedIn: 'root'
 })
 export class AlbumsService {
+  BASE_URL = 'https://jsonplaceholder.typicode.com';
 
-  constructor(private http: HttpClient) { }
-
-  ALB_URL ='https://jsonplaceholder.typicode.com/albums';
+  constructor(private httpClient: HttpClient) { }
 
   getAlbums() {
-    return this.http.get<Album[]>(`${this.ALB_URL}/albums`);
+    return this.httpClient.get<Album[]>(`${this.BASE_URL}/albums`);
   }
 
   getAlbum(id: number) {
-    return this.http.get<Album>(`${this.ALB_URL}/albums/${id}`);
+    return this.httpClient.get<Album>(`${this.BASE_URL}/albums/${id}`);
   }
 
   addAlbum(album: Album) {
-    return this.http.post<Album>(`${this.ALB_URL}/albums`, album);
+    return this.httpClient.post<Album>(`${this.BASE_URL}/albums`, album);
   }
 
   deleteAlbum(id: number) {
-    return this.http.delete<any>(`${this.ALB_URL}/albums/${id}`);
+    return this.httpClient.delete<Album>(`${this.BASE_URL}/albums/${id}`);
   }
 
   updateAlbum(albumId: number, newTitle: string) {
     const body = { title: newTitle };
-    return this.http.put<Album>(`${this.ALB_URL}/albums/${albumId}`, body);
+    console.log(newTitle);
+    return this.httpClient.put<Album>(`${this.BASE_URL}/albums/${albumId}`, body);
   }
 
   getAlbumPhotos(id: number) {
-    return this.http.get<AlbumPhoto[]>(`${this.ALB_URL}/albums/${id}/photos`);
+    return this.httpClient.get<AlbumPhoto[]>(`${this.BASE_URL}/albums/${id}/photos`);
   }
-
 }

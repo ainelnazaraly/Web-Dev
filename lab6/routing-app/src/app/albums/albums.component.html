@@ -6,7 +6,7 @@
   <ul>
     <li *ngFor="let album of albums">
       <a [title]="album.title + ' details'" [routerLink]="['/albums', album.id]">
-        {{ album.title }}
+        {{album.title }}
       </a>
       <button (click)="deleteAlbum(album.id)">Delete</button>
     </li>
