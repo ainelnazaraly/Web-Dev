@@ -1,4 +1,4 @@
-def merge_the_tools(string, k):
+def merge(string, k):
     n = len(string)
     for i in range(0, n, k):
         sub = string[i:i+k]
@@ -11,4 +11,4 @@ def merge_the_tools(string, k):
 
 if __name__ == '__main__':
     string, k = input(), int(input())
-    merge_the_tools(string, k)
+    merge(string, k)
